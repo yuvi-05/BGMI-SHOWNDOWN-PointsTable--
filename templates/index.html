@@ -373,9 +373,7 @@
 <div class="page-header">
   <div class="logo-area">
     <div class="logo-badge">
-      <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-        <path d="M5 3H3v4c0 2.21 1.79 4 4 4h1c.7 1.41 1.86 2.53 3.29 3H9v2H7v2h10v-2h-2v-2h-2.29C14.14 12.53 15.3 11.41 16 10h1c2.21 0 4-1.79 4-4V3h-2v4c0 1.1-.9 2-2 2h-.68A6.003 6.003 0 0 0 18 7V5h-5V3H5zm2 2h8v2c0 2.21-1.79 4-4 4S7 9.21 7 7V5zM3 3v4c0 2.21 1.79 4 4 4 .34 0 .67-.04 1-.11V7H5V3H3zm18 0h-2v4H17v3.89c.33.07.66.11 1 .11 2.21 0 4-1.79 4-4V3z"/>
-      </svg>
+      <img src="logo.png" style="height: 100%;" alt="logo">
     </div>
     <div class="logo-text">
       <span class="brand">eSports</span>
@@ -389,7 +387,6 @@
     <div class="ranking-label">Ranking</div>
   </div>
 
-  <span class="post-pill">Post Match 12</span>
 </div>
 
 <div class="divider"></div>
@@ -506,9 +503,10 @@
           </div>
         </td>
         <td class="igl-cell"><span class="dash">${iglA[i-1] || '—'}</span></td>
+        <td class="match-cell"><span class="dash">${matchesA[i-1] || '—'}</span></td>
         <td class="wwcd-cell"><span class="dash">${wwcdA[i-1] || '—'}</span></td>
         <td class="pos-cell"><span class="dash">${posA[i-1] || '—'}</span></td>
-        <td class="match-cell"><span class="dash">${matchesA[i-1] || '—'}</span></td>
+        
         <td class="fin-cell"><span class="dash">${finishPtsA[i-1] || '—'}</span></td>
         <td class="tot-cell"><span class="dash">${totalPtsA[i-1] || '—'}</span></td>
       `;
@@ -563,9 +561,10 @@
           </div>
         </td>
         <td class="igl-cell"><span class="dash">${iglB[i-1] || '—'}</span></td>
+        <td class="match-cell"><span class="dash">${matchesB[i-1] || '—'}</span></td>
         <td class="wwcd-cell"><span class="dash">${wwcdB[i-1] || '—'}</span></td>
         <td class="pos-cell"><span class="dash">${posB[i-1] || '—'}</span></td>
-        <td class="match-cell"><span class="dash">${matchesB[i-1] || '—'}</span></td>
+        
         <td class="fin-cell"><span class="dash">${finishPtsB[i-1] || '—'}</span></td>
         <td class="tot-cell"><span class="dash">${totalPtsB[i-1] || '—'}</span></td>
       `;
