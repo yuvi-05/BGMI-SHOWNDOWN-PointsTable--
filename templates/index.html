@@ -320,6 +320,7 @@
 
   td.igl-cell   { font-family:'Rajdhani',sans-serif; font-size:12px; font-weight:600; color:var(--text-secondary); }
   td.wwcd-cell  { font-family:'Orbitron',sans-serif; font-size:12px; font-weight:700; color:var(--accent-green); }
+  td.pos-cell   { font-size:13px; font-weight:600; color:#ffffff; }
   td.match-cell { font-size:13px; font-weight:600; color:var(--text-secondary); }
   td.fin-cell   { font-size:13px; font-weight:600; color:var(--accent-cyan); }
   td.tot-cell   { font-family:'Orbitron',sans-serif; font-size:13px; font-weight:700; color:var(--gold); }
@@ -489,11 +490,11 @@
     "Sarthak Pingale",
     "Chaitanya Jagtap",
     "Abhijeet Ghadge"];
-    let wwcdA = ["42","","","","","","","","","","","","","","",""];
-    let posA = ["","2442","","","","","","","","","","","","","",""];
-    let matchesA = ["242","","","","","","","","","","","","","","",""];
-    let finishPtsA = ["242","","","","","","","","","","","","","","",""];
-    let totalPtsA = ["42","","","","","","","","","","","","","","",""];
+    let wwcdA = ["","","","","","","","","","","","","","","",""];
+    let posA = ["","","","","","","","","","","","","","","",""];
+    let matchesA = ["","","","","","","","","","","","","","","",""];
+    let finishPtsA = ["","","","","","","","","","","","","","","",""];
+    let totalPtsA = ["","","","","","","","","","","","","","","",""];
     for (let i = 1; i <= 16; i++) {
       const tr = document.createElement('tr');
       tr.innerHTML = `
@@ -517,8 +518,35 @@
 
   function buildRowsB() {
     const tbody = document.getElementById('tbodyB');
-    let teamB = ["","","","","","","","","","","","","","","",""];
-    let iglB = ["","","","","","","","","","","","","","","",""];
+    let teamB = ["TeamXpark",
+    "3G",
+    "Vinayak Gang",
+    "Legion of Death",
+    "PUPAS",
+    "Team SpiderX",
+    "SEAL PACK",
+    "Godl",
+    "Godlike",
+    "Anish11",
+    "PS BOYS",
+    "NONSENSE",
+    "Team ALPHA esp",
+    "Osama been lag"];
+    let iglB = ["Krishna manohar lakade",
+    "Rohit Misal",
+    "Sanchit vilasrao patil",
+    "Samarth Nitin Bhise",
+    "Saksham Shete",
+    "Varad Pardeshi",
+    "Sahil Sunil Mahapure",
+    "Swaraj",
+    "Sarthak Patil",
+    "Pratik Ghawate",
+    "Yash Supugade",
+    "Samay Kinge",
+    "Karan Singh",
+    "Aryan Patil"
+];
     let wwcdB = ["","","","","","","","","","","","","","","",""];
     let posB = ["","","","","","","","","","","","","","","",""];
     let matchesB = ["","","","","","","","","","","","","","","",""];
