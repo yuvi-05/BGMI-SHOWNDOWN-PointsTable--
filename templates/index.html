@@ -254,6 +254,15 @@
   tbody tr:nth-child(even) { background: var(--row-even); }
   tbody tr:nth-child(odd)  { background: var(--row-odd); }
   tbody tr:hover { background: var(--row-hover) !important; transform: translateX(2px); }
+  .table-block:nth-child(1) tbody tr:nth-child(1) { background: rgba(144,238,144,0.15) !important; }
+  .table-block:nth-child(1) tbody tr:nth-child(2) { background: rgba(144,238,144,0.15) !important; }
+  .table-block:nth-child(1) tbody tr:nth-child(3) { background: rgba(144,238,144,0.15) !important; }
+  .table-block:nth-child(1) tbody tr:nth-child(4) { background: rgba(144,238,144,0.15) !important; }
+  .table-block:nth-child(1) tbody tr:nth-child(5) { background: rgba(144,238,144,0.15) !important; }
+  .table-block:nth-child(1) tbody tr:nth-child(6) { background: rgba(144,238,144,0.15) !important; }
+  .table-block:nth-child(1) tbody tr:nth-child(7) { background: rgba(144,238,144,0.15) !important; }
+  .table-block:nth-child(1) tbody tr:nth-child(8) { background: rgba(144,238,144,0.15) !important; }
+  
   tbody tr:nth-child(1) { background: rgba(255,215,0,0.06); }
   tbody tr:nth-child(2) { background: rgba(192,192,192,0.04); }
   tbody tr:nth-child(3) { background: rgba(205,127,50,0.04); }
@@ -461,15 +470,15 @@
 <script>
   function buildRowsA() {
     const tbody = document.getElementById('tbodyA');
-    let teamA = ["Team Falcon",
-    "Team Fine shyts",
-    "TEAM ARCANE",
-    "TeamXpark",
-    "Toxic Titans",
+    let teamA = ["Team Fine shyts- Q",
+    "TeamXpark - Q",
+    "Team Falcon - Q",
+    "TEAM ARCANE - Q",
+    "Toxic Titans - Q",
+    "Führer - Q",
+    "Lethal Syndicate - Q",
+    "Clax Esports - Q",
     "Rogue Force (RF)",
-    "Clax Esports",
-    "Lethal Syndicate",
-    "Führer",
     "Vandal",
     "BLACK",
     
@@ -478,11 +487,11 @@
     "Happy Nation"
     ];
     
-    let wwcdA = ["1","","","","","","","","","","","","","","",""];
-    let posA = ["10","6","4","3","5","1","1","2","0","0","0","","","","",""];
-    let matchesA = ["1","1","1","1","1","1","1","1","1","1","1","0","0","0","",""];
-    let finishPtsA = ["5","8","6","6","2","4","3","0","2","2","1","","","","",""];
-    let totalPtsA = ["15","14","10","9","7","5","4","2","2","2","1","","","","",""];
+    let wwcdA = ["","1","1","","","","","","","","","","","","",""];
+    let posA = ["12","13","13","5","7","5","6","1","1","0","0","","","","",""];
+    let matchesA = ["2","2","2","2","2","2","2","2","2","2","2","0","0","0","",""];
+    let finishPtsA = ["19","10","8","11","8","7","2","4","4","2","2","","","","",""];
+    let totalPtsA = ["31","23","21","16","15","12","8","6","5","2","2","","","","",""];
     for (let i = 1; i <= 16; i++) {
       const tr = document.createElement('tr');
       tr.innerHTML = `
