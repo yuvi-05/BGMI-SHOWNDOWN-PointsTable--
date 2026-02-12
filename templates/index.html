@@ -408,10 +408,11 @@
           <tr>
             <th class="col-hash">#</th>
             <th class="col-team">Team</th>
-            <th class="col-igl">IGL</th>
+            <th class="col-match">Matches</th>
+            
             <th class="col-wwcd">WWCD</th>
             <th class="col-pos">Pos</th>
-            <th class="col-match">Matches</th>
+            
             <th class="col-fin">Finish Pts</th>
             <th class="col-tot">Total Pts</th>
           </tr>
@@ -435,10 +436,11 @@
           <tr>
             <th class="col-hash">#</th>
             <th class="col-team">Team</th>
-            <th class="col-igl">IGL</th>
+            <th class="col-match">Matches</th>
+            
             <th class="col-wwcd">WWCD</th>
             <th class="col-pos">Pos</th>
-            <th class="col-match">Matches</th>
+            
             <th class="col-fin">Finish Pts</th>
             <th class="col-tot">Total Pts</th>
           </tr>
@@ -459,39 +461,28 @@
 <script>
   function buildRowsA() {
     const tbody = document.getElementById('tbodyA');
-    let teamA = ["Clax Esports",
+    let teamA = ["Team Falcon",
     "Team Fine shyts",
-    "Night owl's",
     "TEAM ARCANE",
-    "Rogue Force (RF)",
     "TeamXpark",
-    "Team Bubblegum",
-    "Lethal Syndicate",
     "Toxic Titans",
-    "BLACK",
-    "Vandal",
+    "Rogue Force (RF)",
+    "Clax Esports",
+    "Lethal Syndicate",
     "Führer",
-    "Happy Nation",
-    "Team Falcon"];
-    let iglA = ["Ruturaj Daphal",
-    "Avej Chougule",
-    "Mayur Chavan",
-    "Vaibhav Mahajan",
-    "Dhawal vegad",
-    "Krishna manohar lakade",
-    "Burhan Shaikh",
-    "Samarth Shinde",
-    "Sanskar S Muley",
-    "Chetan Mudabe",
-    "Shriraj Raosaheb Pavase",
-    "Sarthak Pingale",
-    "Chaitanya Jagtap",
-    "Abhijeet Ghadge"];
-    let wwcdA = ["","","","","","","","","","","","","","","",""];
-    let posA = ["","","","","","","","","","","","","","","",""];
-    let matchesA = ["","","","","","","","","","","","","","","",""];
-    let finishPtsA = ["","","","","","","","","","","","","","","",""];
-    let totalPtsA = ["","","","","","","","","","","","","","","",""];
+    "Vandal",
+    "BLACK",
+    
+    "Night owl's",
+    "Team Bubblegum",
+    "Happy Nation"
+    ];
+    
+    let wwcdA = ["1","","","","","","","","","","","","","","",""];
+    let posA = ["10","6","4","3","5","1","1","2","0","0","0","","","","",""];
+    let matchesA = ["1","1","1","1","1","1","1","1","1","1","1","0","0","0","",""];
+    let finishPtsA = ["5","8","6","6","2","4","3","0","2","2","1","","","","",""];
+    let totalPtsA = ["15","14","10","9","7","5","4","2","2","2","1","","","","",""];
     for (let i = 1; i <= 16; i++) {
       const tr = document.createElement('tr');
       tr.innerHTML = `
@@ -502,7 +493,7 @@
             <span class="team-name">${teamA[i-1]}</span>
           </div>
         </td>
-        <td class="igl-cell"><span class="dash">${iglA[i-1] || '—'}</span></td>
+        
         <td class="match-cell"><span class="dash">${matchesA[i-1] || '—'}</span></td>
         <td class="wwcd-cell"><span class="dash">${wwcdA[i-1] || '—'}</span></td>
         <td class="pos-cell"><span class="dash">${posA[i-1] || '—'}</span></td>
@@ -530,21 +521,7 @@
     "NONSENSE",
     "Team ALPHA esp",
     "Osama been lag"];
-    let iglB = [
-    "Rohit Misal",
-    "Sanchit vilasrao patil",
-    "Samarth Nitin Bhise",
-    "Saksham Shete",
-    "Varad Pardeshi",
-    "Sahil Sunil Mahapure",
-    "Swaraj",
-    "Sarthak Patil",
-    "Pratik Ghawate",
-    "Yash Supugade",
-    "Samay Kinge",
-    "Karan Singh",
-    "Aryan Patil"
-];
+    
     let wwcdB = ["","","","","","","","","","","","","","","",""];
     let posB = ["","","","","","","","","","","","","","","",""];
     let matchesB = ["","","","","","","","","","","","","","","",""];
@@ -560,7 +537,7 @@
             <span class="team-name">${teamB[i-1]}</span>
           </div>
         </td>
-        <td class="igl-cell"><span class="dash">${iglB[i-1] || '—'}</span></td>
+        <
         <td class="match-cell"><span class="dash">${matchesB[i-1] || '—'}</span></td>
         <td class="wwcd-cell"><span class="dash">${wwcdB[i-1] || '—'}</span></td>
         <td class="pos-cell"><span class="dash">${posB[i-1] || '—'}</span></td>
