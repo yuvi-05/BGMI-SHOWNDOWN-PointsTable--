@@ -279,18 +279,18 @@
   td {
     padding: 9px 8px; text-align: center;
     vertical-align: middle; font-size: 13px;
-    font-weight: 500; color: var(--text-secondary);
+    font-weight: 500; color: #ffffff;
   }
 
   /* rank */
   td.rank-cell {
     font-family: 'Orbitron', sans-serif;
-    font-size: 11px; font-weight: 700; color: var(--text-muted); width: 40px;
+    font-size: 11px; font-weight: 700; color: #ffffff; width: 40px;
   }
-  td.pos-cell  { font-size:13px; font-weight:600; color:var(--text-secondary); }
-  tr:nth-child(1) td.rank-cell { color: var(--rank1); }
-  tr:nth-child(2) td.rank-cell { color: var(--rank2); }
-  tr:nth-child(3) td.rank-cell { color: var(--rank3); }
+  td.pos-cell  { font-size:13px; font-weight:600; color:#ffffff; }
+  tr:nth-child(1) td.rank-cell { color: #ffffff; }
+  tr:nth-child(2) td.rank-cell { color: #ffffff; }
+  tr:nth-child(3) td.rank-cell { color: #ffffff; }
 
   .rank-num {
     display: inline-flex; align-items: center; justify-content: center;
@@ -310,28 +310,28 @@
     background: linear-gradient(135deg, var(--panel-border), #1e2435);
     border: 1px solid rgba(255,255,255,0.07);
     display: flex; align-items: center; justify-content: center;
-    font-size: 9px; font-weight: 800; color: var(--text-muted);
+    font-size: 9px; font-weight: 800; color: #ffffff;
     flex-shrink: 0; font-family: 'Rajdhani', sans-serif;
   }
   .team-name {
     font-family: 'Rajdhani', sans-serif;
-    font-size: 14px; font-weight: 700; letter-spacing: 0.4px; color: var(--text-primary);
+    font-size: 14px; font-weight: 700; letter-spacing: 0.4px; color: #ffffff;
   }
 
-  td.igl-cell   { font-family:'Rajdhani',sans-serif; font-size:12px; font-weight:600; color:var(--text-secondary); }
-  td.wwcd-cell  { font-family:'Orbitron',sans-serif; font-size:12px; font-weight:700; color:var(--accent-green); }
+  td.igl-cell   { font-family:'Rajdhani',sans-serif; font-size:12px; font-weight:600; color:#ffffff; }
+  td.wwcd-cell  { font-family:'Orbitron',sans-serif; font-size:12px; font-weight:700; color:#ffffff; }
   td.pos-cell   { font-size:13px; font-weight:600; color:#ffffff; }
-  td.match-cell { font-size:13px; font-weight:600; color:var(--text-secondary); }
-  td.fin-cell   { font-size:13px; font-weight:600; color:var(--accent-cyan); }
-  td.tot-cell   { font-family:'Orbitron',sans-serif; font-size:13px; font-weight:700; color:var(--gold); }
-  tr:nth-child(1) td.tot-cell { color:var(--rank1); text-shadow:0 0 10px rgba(255,215,0,0.4); }
+  td.match-cell { font-size:13px; font-weight:600; color:#ffffff; }
+  td.fin-cell   { font-size:13px; font-weight:600; color:#ffffff; }
+  td.tot-cell   { font-family:'Orbitron',sans-serif; font-size:13px; font-weight:700; color:#ffffff; }
+  tr:nth-child(1) td.tot-cell { color:#ffffff; text-shadow:0 0 10px rgba(255,215,0,0.4); }
 
   /* accent border left */
   tr:nth-child(1) td:first-child { border-left: 3px solid var(--rank1); }
   tr:nth-child(2) td:first-child { border-left: 3px solid var(--rank2); }
   tr:nth-child(3) td:first-child { border-left: 3px solid var(--rank3); }
 
-  .dash { color:var(--text-muted); font-size:15px; opacity:0.38; }
+  .dash { color:#ffffff; font-size:15px; opacity:0.38; }
 
   /* ─── FOOTER ─── */
   .page-footer {
@@ -506,11 +506,11 @@
           </div>
         </td>
         <td class="igl-cell"><span class="dash">${iglA[i-1] || '—'}</span></td>
-        <td class="wwcd-cell"><span class="dash" style="color:var(--text-muted)">${wwcdA[i-1] || '—'}</span></td>
+        <td class="wwcd-cell"><span class="dash">${wwcdA[i-1] || '—'}</span></td>
         <td class="pos-cell"><span class="dash">${posA[i-1] || '—'}</span></td>
         <td class="match-cell"><span class="dash">${matchesA[i-1] || '—'}</span></td>
-        <td class="fin-cell"><span class="dash" style="color:var(--text-muted)">${finishPtsA[i-1] || '—'}</span></td>
-        <td class="tot-cell"><span class="dash" style="color:var(--text-muted)">${totalPtsA[i-1] || '—'}</span></td>
+        <td class="fin-cell"><span class="dash">${finishPtsA[i-1] || '—'}</span></td>
+        <td class="tot-cell"><span class="dash">${totalPtsA[i-1] || '—'}</span></td>
       `;
       tbody.appendChild(tr);
     }
@@ -518,7 +518,7 @@
 
   function buildRowsB() {
     const tbody = document.getElementById('tbodyB');
-    let teamB = ["TeamXpark",
+    let teamB = [
     "3G",
     "Vinayak Gang",
     "Legion of Death",
@@ -532,7 +532,7 @@
     "NONSENSE",
     "Team ALPHA esp",
     "Osama been lag"];
-    let iglB = ["Krishna manohar lakade",
+    let iglB = [
     "Rohit Misal",
     "Sanchit vilasrao patil",
     "Samarth Nitin Bhise",
@@ -563,11 +563,11 @@
           </div>
         </td>
         <td class="igl-cell"><span class="dash">${iglB[i-1] || '—'}</span></td>
-        <td class="wwcd-cell"><span class="dash" style="color:var(--text-muted)">${wwcdB[i-1] || '—'}</span></td>
+        <td class="wwcd-cell"><span class="dash">${wwcdB[i-1] || '—'}</span></td>
         <td class="pos-cell"><span class="dash">${posB[i-1] || '—'}</span></td>
         <td class="match-cell"><span class="dash">${matchesB[i-1] || '—'}</span></td>
-        <td class="fin-cell"><span class="dash" style="color:var(--text-muted)">${finishPtsB[i-1] || '—'}</span></td>
-        <td class="tot-cell"><span class="dash" style="color:var(--text-muted)">${totalPtsB[i-1] || '—'}</span></td>
+        <td class="fin-cell"><span class="dash">${finishPtsB[i-1] || '—'}</span></td>
+        <td class="tot-cell"><span class="dash">${totalPtsB[i-1] || '—'}</span></td>
       `;
       tbody.appendChild(tr);
     }
