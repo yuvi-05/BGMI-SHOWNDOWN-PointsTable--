@@ -263,6 +263,13 @@
   .table-block:nth-child(1) tbody tr:nth-child(7) { background: rgba(144,238,144,0.15) !important; }
   .table-block:nth-child(1) tbody tr:nth-child(8) { background: rgba(144,238,144,0.15) !important; }
   
+  .table-block:nth-child(2) tbody tr:nth-child(1) { background: rgba(144,238,144,0.15) !important; }
+  .table-block:nth-child(2) tbody tr:nth-child(2) { background: rgba(144,238,144,0.15) !important; }
+  .table-block:nth-child(2) tbody tr:nth-child(3) { background: rgba(144,238,144,0.15) !important; }
+  .table-block:nth-child(2) tbody tr:nth-child(4) { background: rgba(144,238,144,0.15) !important; }
+  .table-block:nth-child(2) tbody tr:nth-child(5) { background: rgba(144,238,144,0.15) !important; }
+  .table-block:nth-child(2) tbody tr:nth-child(6) { background: rgba(144,238,144,0.15) !important; }
+  
   tbody tr:nth-child(1) { background: rgba(255,215,0,0.06); }
   tbody tr:nth-child(2) { background: rgba(192,192,192,0.04); }
   tbody tr:nth-child(3) { background: rgba(205,127,50,0.04); }
@@ -409,7 +416,7 @@
       <div class="group-tag">
         <span class="group-pill grp-a">Group A</span>
       </div>
-      <span class="match-tag">16 Teams</span>
+      <span class="match-tag">14 Teams</span>
     </div>
     <div class="table-container">
       <table id="tableA">
@@ -437,7 +444,7 @@
       <div class="group-tag">
         <span class="group-pill grp-b">Group B</span>
       </div>
-      <span class="match-tag">16 Teams</span>
+      <span class="match-tag">14 Teams</span>
     </div>
     <div class="table-container">
       <table id="tableB">
@@ -491,8 +498,8 @@
     let posA = ["12","13","13","5","7","5","6","1","1","0","0","","","","",""];
     let matchesA = ["2","2","2","2","2","2","2","2","2","2","2","0","0","0","",""];
     let finishPtsA = ["19","10","8","11","8","7","2","4","4","2","2","","","","",""];
-    let totalPtsA = ["31","23","21","16","15","12","8","6","5","2","2","","","","",""];
-    for (let i = 1; i <= 16; i++) {
+    let totalPtsA = ["31","23","21","16","15","12","8","5","5","2","2","","","","",""];
+    for (let i = 1; i <= 14; i++) {
       const tr = document.createElement('tr');
       tr.innerHTML = `
         <td class="rank-cell"><span class="rank-num">${i}</span></td>
@@ -515,12 +522,12 @@
   function buildRowsB() {
     const tbody = document.getElementById('tbodyB');
     let teamB = [
-      "Legion of Death",
-      "Team SpiderX",
-    "Osama been lag",
-    "Vinayak Gang",
-    "PUPAS",
-    "Godlike",
+      "Osama been lag - Q",
+      "Team SpiderX - Q",
+      "Legion of Death - Q",
+      "PUPAS - Q",
+    "Vinayak Gang - Q",
+    "Godlike - Q",
     "Team ALPHA esp",
     "3G",
 
@@ -531,12 +538,12 @@
     "NONSENSE"
     ];
     
-    let wwcdB = ["1","","","","","","","","","","","","","","",""];
-    let posB = ["10","6","5","4","3","2","1","1","","","","","","","",""];
-    let matchesB = ["1","1","1","1","1","1","1","1","","","","","","","",""];
-    let finishPtsB = ["8","6","6","3","5","0","1","0","","","","","","","",""];
-    let totalPtsB = ["17","12","11","7","8","2","2","1","","","","","","","",""];
-    for (let i = 1; i <= 16; i++) {
+    let wwcdB = ["1","","1","","","","","","","","","","","","",""];
+    let posB = ["15","11","13","11","5","6","3","1","","","","","","","",""];
+    let matchesB = ["2","2","2","2","2","2","2","1","","","","","","","",""];
+    let finishPtsB = ["21","11","9","7","3","0","1","0","","","","","","","",""];
+    let totalPtsB = ["36","22","22","18","8","6","4 ","1","","","","","","","",""];
+    for (let i = 1; i <= 14; i++) {
       const tr = document.createElement('tr');
       tr.innerHTML = `
         <td class="rank-cell"><span class="rank-num">${i}</span></td>
