@@ -502,11 +502,9 @@
             <span class="team-name">${teamA[i-1]}</span>
           </div>
         </td>
-        
         <td class="match-cell"><span class="dash">${matchesA[i-1] || '—'}</span></td>
         <td class="wwcd-cell"><span class="dash">${wwcdA[i-1] || '—'}</span></td>
         <td class="pos-cell"><span class="dash">${posA[i-1] || '—'}</span></td>
-        
         <td class="fin-cell"><span class="dash">${finishPtsA[i-1] || '—'}</span></td>
         <td class="tot-cell"><span class="dash">${totalPtsA[i-1] || '—'}</span></td>
       `;
@@ -517,25 +515,27 @@
   function buildRowsB() {
     const tbody = document.getElementById('tbodyB');
     let teamB = [
-    "3G",
+      "Legion of Death",
+      "Team SpiderX",
+    "Osama been lag",
     "Vinayak Gang",
-    "Legion of Death",
     "PUPAS",
-    "Team SpiderX",
+    "Godlike",
+    "Team ALPHA esp",
+    "3G",
+
     "SEAL PACK",
     "Godl",
-    "Godlike",
     "Anish11",
     "PS BOYS",
-    "NONSENSE",
-    "Team ALPHA esp",
-    "Osama been lag"];
+    "NONSENSE"
+    ];
     
-    let wwcdB = ["","","","","","","","","","","","","","","",""];
-    let posB = ["","","","","","","","","","","","","","","",""];
-    let matchesB = ["","","","","","","","","","","","","","","",""];
-    let finishPtsB = ["","","","","","","","","","","","","","","",""];
-    let totalPtsB = ["","","","","","","","","","","","","","","",""];
+    let wwcdB = ["1","","","","","","","","","","","","","","",""];
+    let posB = ["10","6","5","4","3","2","1","1","","","","","","","",""];
+    let matchesB = ["1","1","1","1","1","1","1","1","","","","","","","",""];
+    let finishPtsB = ["8","6","6","3","5","0","1","0","","","","","","","",""];
+    let totalPtsB = ["17","12","11","7","8","2","2","1","","","","","","","",""];
     for (let i = 1; i <= 16; i++) {
       const tr = document.createElement('tr');
       tr.innerHTML = `
@@ -546,11 +546,10 @@
             <span class="team-name">${teamB[i-1]}</span>
           </div>
         </td>
-        <
+        
         <td class="match-cell"><span class="dash">${matchesB[i-1] || '—'}</span></td>
         <td class="wwcd-cell"><span class="dash">${wwcdB[i-1] || '—'}</span></td>
         <td class="pos-cell"><span class="dash">${posB[i-1] || '—'}</span></td>
-        
         <td class="fin-cell"><span class="dash">${finishPtsB[i-1] || '—'}</span></td>
         <td class="tot-cell"><span class="dash">${totalPtsB[i-1] || '—'}</span></td>
       `;
