@@ -40,6 +40,14 @@
       url("data:image/svg+xml,%3Csvg width='60' height='60' viewBox='0 0 60 60' xmlns='http://www.w3.org/2000/svg'%3E%3Cg fill='none' fill-rule='evenodd'%3E%3Cg fill='%231a1e2a' fill-opacity='0.25'%3E%3Cpath d='M36 34v-4h-2v4h-4v2h4v4h2v-4h4v-2h-4zm0-30V0h-2v4h-4v2h4v4h2V6h4V4h-4zM6 34v-4H4v4H0v2h4v4h2v-4h4v-2H6zM6 4V0H4v4H0v2h4v4h2V6h4V4H6z'/%3E%3C/g%3E%3C/g%3E%3C/svg%3E");
   }
 
+  @media (max-width: 768px) {
+    body { padding: 16px 12px 24px; }
+  }
+
+  @media (max-width: 480px) {
+    body { padding: 10px 8px 16px; }
+  }
+
   /* ─── PAGE HEADER ─── */
   .page-header {
     display: flex;
@@ -50,6 +58,15 @@
     padding: 0 4px;
     gap: 20px;
     animation: fadeInDown 0.5s ease both;
+    flex-wrap: wrap;
+  }
+
+  @media (max-width: 768px) {
+    .page-header { flex-direction: column; align-items: center; gap: 10px; margin-bottom: 6px; }
+  }
+
+  @media (max-width: 480px) {
+    .page-header { gap: 8px; margin-bottom: 4px; }
   }
 
   @keyframes fadeInDown {
@@ -395,13 +412,109 @@
   /* ─── RESPONSIVE ─── */
   @media (max-width: 1024px) {
     .tables-grid { grid-template-columns: 1fr; gap: 30px; }
-    .page-header { flex-wrap: wrap; }
+    .page-header { flex-wrap: wrap; justify-content: center; }
+    body { padding: 20px 16px 30px; }
   }
-  @media (max-width: 600px) {
-    body { padding: 20px 12px 30px; }
-    th, td { padding: 8px 5px; font-size: 11px; }
+
+  @media (max-width: 768px) {
+    body { padding: 16px 12px 24px; }
+    .page-header { flex-direction: column; align-items: center; margin-bottom: 8px; }
+    .title-block .overall { font-size: 20px; letter-spacing: 3px; }
+    .title-block .ranking-label { font-size: 10px; }
+    .logo-badge { width: 48px; height: 48px; }
+    .logo-badge svg { width: 26px; height: 26px; }
+    .logo-text .brand { font-size: 9px; letter-spacing: 2px; }
+    .logo-text .event { font-size: 18px; }
+    .logo-text .sub { font-size: 11px; letter-spacing: 1.5px; }
+    
+    th { padding: 10px 6px; font-size: 8px; }
+    td { padding: 8px 6px; font-size: 12px; }
     .team-name { font-size: 12px; }
-    th { font-size: 7.5px; }
+    .team-avatar { width: 24px; height: 24px; font-size: 8px; }
+    .grand-finale-title { font-size: 22px; letter-spacing: 2px; }
+    .divider { margin: 8px auto 16px; }
+  }
+
+  @media (max-width: 600px) {
+    body { padding: 12px 10px 20px; }
+    .page-header { padding: 0 2px; }
+    .logo-area { gap: 10px; }
+    .logo-badge { width: 44px; height: 44px; }
+    .logo-badge svg { width: 22px; height: 22px; }
+    .logo-text .brand { font-size: 8px; letter-spacing: 1.5px; }
+    .logo-text .event { font-size: 16px; }
+    .logo-text .sub { font-size: 10px; }
+    
+    .title-block .overall { font-size: 18px; letter-spacing: 2px; }
+    .title-block .ranking-label { font-size: 9px; letter-spacing: 1px; }
+    .post-pill { font-size: 10px; padding: 3px 10px; }
+    
+    .tables-grid { gap: 16px; }
+    .table-subheader { margin-bottom: 6px; padding: 0 2px; }
+    .group-pill { font-size: 11px; padding: 4px 10px; }
+    .match-tag { font-size: 11px; }
+    
+    th { padding: 8px 4px; font-size: 7px; font-weight: 600; }
+    th.col-hash { width: 32px; }
+    th.col-pos { width: 50px; }
+    th.col-team { padding-left: 8px; min-width: 100px; }
+    th.col-igl { min-width: 80px; }
+    th.col-wwcd { width: 50px; }
+    th.col-match { width: 60px; }
+    th.col-fin { width: 74px; }
+    th.col-tot { width: 74px; }
+    
+    td { padding: 7px 4px; font-size: 11px; font-weight: 500; }
+    .rank-num { width: 22px; height: 22px; font-size: 9px; }
+    .team-avatar { width: 22px; height: 22px; font-size: 7px; }
+    .team-name { font-size: 11px; }
+    
+    .grand-finale-title { font-size: 18px; letter-spacing: 1px; }
+    .grand-finale-section { margin: 0 auto 20px; }
+    .table-container { border-radius: 8px; }
+    
+    .page-footer { flex-direction: column; gap: 8px; margin: 12px auto 0; }
+    .footer-tag { font-size: 8px; letter-spacing: 1px; }
+    .hashtag { font-size: 9px; }
+  }
+
+  @media (max-width: 480px) {
+    body { padding: 10px 8px 16px; }
+    .logo-badge { width: 40px; height: 40px; }
+    .logo-badge svg { width: 20px; height: 20px; }
+    .logo-text .brand { font-size: 7px; letter-spacing: 1px; }
+    .logo-text .event { font-size: 14px; }
+    .logo-text .sub { font-size: 9px; letter-spacing: 1px; }
+    
+    .title-block .overall { font-size: 16px; letter-spacing: 1.5px; }
+    .title-block .ranking-label { font-size: 8px; }
+    .post-pill { font-size: 9px; padding: 2px 8px; }
+    
+    th { padding: 6px 3px; font-size: 6px; }
+    td { padding: 6px 3px; font-size: 10px; }
+    .team-name { font-size: 10px; }
+    .rank-cell { width: 28px; }
+    .rank-num { width: 20px; height: 20px; font-size: 8px; }
+    .team-avatar { width: 20px; height: 20px; font-size: 6px; }
+    
+    .grand-finale-title { font-size: 16px; letter-spacing: 1px; }
+    .congratulations-content { padding: 20px; max-width: 90vw; }
+    .congratulations-title { font-size: 32px; letter-spacing: 2px; }
+    .winners-container { grid-template-columns: 1fr; gap: 15px; }
+    .winner-card { padding: 20px 15px; }
+  }
+
+  @media (max-width: 360px) {
+    body { padding: 8px 6px 12px; }
+    .logo-badge { width: 36px; height: 36px; }
+    .logo-text .brand { font-size: 6px; }
+    .logo-text .event { font-size: 12px; }
+    .logo-text .sub { font-size: 8px; }
+    
+    .title-block .overall { font-size: 14px; letter-spacing: 1px; }
+    th { font-size: 5px; padding: 4px 2px; }
+    td { font-size: 9px; padding: 5px 2px; }
+    .team-name { font-size: 9px; }
   }
 
   /* ─── FIRECRACKERS EFFECT ─── */
@@ -579,6 +692,39 @@
 
   .close-btn:active {
     transform: translateY(0);
+  }
+
+  /* ─── MODAL RESPONSIVE ─── */
+  @media (max-width: 768px) {
+    .congratulations-content { padding: 30px 20px; max-width: 90vw; }
+    .congratulations-title { font-size: 40px; letter-spacing: 3px; }
+    .winners-container { gap: 16px; margin-top: 30px; margin-bottom: 20px; }
+    .winner-card { padding: 24px 16px; border-radius: 12px; }
+    .rank-badge { font-size: 24px; height: 40px; margin-bottom: 8px; }
+    .team-title { font-size: 16px; }
+    .team-points { font-size: 14px; }
+    .close-btn { padding: 10px 32px; font-size: 12px; }
+  }
+
+  @media (max-width: 480px) {
+    .congratulations-modal { padding: 16px; }
+    .congratulations-content { padding: 20px 16px; max-width: 100%; }
+    .congratulations-title { font-size: 32px; letter-spacing: 2px; margin-bottom: 16px; }
+    .winners-container { grid-template-columns: 1fr; gap: 12px; margin-top: 20px; margin-bottom: 16px; }
+    .winner-card { padding: 20px 12px; border-radius: 10px; }
+    .rank-badge { font-size: 20px; height: 32px; margin-bottom: 6px; }
+    .team-title { font-size: 14px; margin-bottom: 6px; }
+    .team-points { font-size: 12px; }
+    .close-modal { margin-top: 20px; }
+    .close-btn { padding: 10px 24px; font-size: 11px; letter-spacing: 1px; }
+  }
+
+  @media (max-width: 360px) {
+    .congratulations-content { padding: 16px 12px; }
+    .congratulations-title { font-size: 28px; letter-spacing: 1.5px; }
+    .team-title { font-size: 12px; }
+    .team-points { font-size: 11px; }
+    .close-btn { padding: 8px 16px; font-size: 10px; }
   }
 </style>
 </head>
