@@ -620,34 +620,30 @@
   function buildRowsGF() {
     const tbody = document.getElementById('tbodyGF');
     let teamGF = [
-      "Osama been lag ",
-      "Toxic Titans ",
       "TeamXpark ",
-      "Legion of Death ",
-      "Godlike ",
-      "PUPAS ",
-
       "Team Fine shyts",
+      "Osama been lag ",
+      "Legion of Death ",
+      "Toxic Titans ",
+      "PUPAS ",
       "Team SpiderX ",
+      "Godlike ",
+      "Clax Esports ",
       "Team Falcon ",
 
-      "Clax Esports ",
       "TEAM ARCANE ",
-
+      "Fuhrer",
       "Lethal Syndicate ",
-      "Vinayak Gang ",
-      
-      
-      
+      "Vinayak Gang ",      
     ];
     
-    let wwcdGF = ["","1","","","","","","","","","","","","","",""];
-    let posGF = ["5","10","0","6","4","0","3","0","0","2","0","1","1","","","","",""];
-    let matchesGF = ["1","1","1","1","1","1","1","1","1","1","1","1","1","","","","",""];
-    let finishPtsGF = ["12","4","14","7","6","10","3","6","5","2","4","1","0","","","","",""];
-    let totalPtsGF = ["17","14","14","13","10","10","6","6","5","4","4","2","1","","","","",""];
+    let wwcdGF = ["1","","","","1","","","","","","","","",""];
+    let posGF = ["10","9","7","9","10","5","4","4","3","0","1","0","1","1"];
+    let matchesGF = ["2","2","2","2","2","2","2","2","2","2","2","1","2","2"];
+    let finishPtsGF = ["22","17","18","15","6","10","9","6","6","6","4","5","2","0"];
+    let totalPtsGF = ["32","26","25","24","16","15","13","10","9","6","5","5","3","1"];
     
-    for (let i = 1; i <= 16; i++) {
+    for (let i = 1; i <= 14; i++) {
       const tr = document.createElement('tr');
       tr.innerHTML = `
         <td class="rank-cell"><span class="rank-num">${i}</span></td>
