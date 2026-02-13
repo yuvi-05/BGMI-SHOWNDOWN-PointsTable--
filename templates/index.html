@@ -136,6 +136,26 @@
     box-shadow: 0 0 14px rgba(245,197,24,0.28);
   }
 
+  /* ─── GRAND FINALE SECTION ─── */
+  .grand-finale-section {
+    max-width: 1800px;
+    margin: 0 auto 30px;
+    animation: fadeInUp 0.55s ease 0.1s both;
+  }
+  .grand-finale-header {
+    text-align: center;
+    margin-bottom: 16px;
+  }
+  .grand-finale-title {
+    font-family: 'Orbitron', sans-serif;
+    font-size: 28px; font-weight: 900; letter-spacing: 4px;
+    text-transform: uppercase;
+    background: linear-gradient(90deg, #ffd700, var(--gold), #ff6b00);
+    -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;
+    text-shadow: 0 0 20px rgba(255,215,0,0.3);
+    margin-bottom: 6px;
+  }
+
   /* ─── TWO-TABLE GRID ─── */
   .tables-grid {
     display: grid;
@@ -254,22 +274,22 @@
   tbody tr:nth-child(even) { background: var(--row-even); }
   tbody tr:nth-child(odd)  { background: var(--row-odd); }
   tbody tr:hover { background: var(--row-hover) !important; transform: translateX(2px); }
-  .table-block:nth-child(1) tbody tr:nth-child(1) { background: rgba(144,238,144,0.15) !important; }
-  .table-block:nth-child(1) tbody tr:nth-child(2) { background: rgba(144,238,144,0.15) !important; }
-  .table-block:nth-child(1) tbody tr:nth-child(3) { background: rgba(144,238,144,0.15) !important; }
-  .table-block:nth-child(1) tbody tr:nth-child(4) { background: rgba(144,238,144,0.15) !important; }
-  .table-block:nth-child(1) tbody tr:nth-child(5) { background: rgba(144,238,144,0.15) !important; }
-  .table-block:nth-child(1) tbody tr:nth-child(6) { background: rgba(144,238,144,0.15) !important; }
-  .table-block:nth-child(1) tbody tr:nth-child(7) { background: rgba(144,238,144,0.15) !important; }
-  .table-block:nth-child(1) tbody tr:nth-child(8) { background: rgba(144,238,144,0.15) !important; }
+  .tables-grid .table-block:nth-child(1) tbody tr:nth-child(1) { background: rgba(144,238,144,0.15) !important; }
+  .tables-grid .table-block:nth-child(1) tbody tr:nth-child(2) { background: rgba(144,238,144,0.15) !important; }
+  .tables-grid .table-block:nth-child(1) tbody tr:nth-child(3) { background: rgba(144,238,144,0.15) !important; }
+  .tables-grid .table-block:nth-child(1) tbody tr:nth-child(4) { background: rgba(144,238,144,0.15) !important; }
+  .tables-grid .table-block:nth-child(1) tbody tr:nth-child(5) { background: rgba(144,238,144,0.15) !important; }
+  .tables-grid .table-block:nth-child(1) tbody tr:nth-child(6) { background: rgba(144,238,144,0.15) !important; }
+  .tables-grid .table-block:nth-child(1) tbody tr:nth-child(7) { background: rgba(144,238,144,0.15) !important; }
+  .tables-grid .table-block:nth-child(1) tbody tr:nth-child(8) { background: rgba(144,238,144,0.15) !important; }
   
-  .table-block:nth-child(2) tbody tr:nth-child(1) { background: rgba(144,238,144,0.15) !important; }
-  .table-block:nth-child(2) tbody tr:nth-child(2) { background: rgba(144,238,144,0.15) !important; }
-  .table-block:nth-child(2) tbody tr:nth-child(3) { background: rgba(144,238,144,0.15) !important; }
-  .table-block:nth-child(2) tbody tr:nth-child(4) { background: rgba(144,238,144,0.15) !important; }
-  .table-block:nth-child(2) tbody tr:nth-child(5) { background: rgba(144,238,144,0.15) !important; }
-  .table-block:nth-child(2) tbody tr:nth-child(6) { background: rgba(144,238,144,0.15) !important; }
-  .table-block:nth-child(2) tbody tr:nth-child(7) { background: rgba(144,238,144,0.15) !important; }
+  .tables-grid .table-block:nth-child(2) tbody tr:nth-child(1) { background: rgba(144,238,144,0.15) !important; }
+  .tables-grid .table-block:nth-child(2) tbody tr:nth-child(2) { background: rgba(144,238,144,0.15) !important; }
+  .tables-grid .table-block:nth-child(2) tbody tr:nth-child(3) { background: rgba(144,238,144,0.15) !important; }
+  .tables-grid .table-block:nth-child(2) tbody tr:nth-child(4) { background: rgba(144,238,144,0.15) !important; }
+  .tables-grid .table-block:nth-child(2) tbody tr:nth-child(5) { background: rgba(144,238,144,0.15) !important; }
+  .tables-grid .table-block:nth-child(2) tbody tr:nth-child(6) { background: rgba(144,238,144,0.15) !important; }
+  .tables-grid .table-block:nth-child(2) tbody tr:nth-child(7) { background: rgba(144,238,144,0.15) !important; }
   /* .table-block:nth-child(2) tbody tr:nth-child(8) { background: rgba(144,238,144,0.15) !important; } */
   
   tbody tr:nth-child(1) { background: rgba(255,215,0,0.06); }
@@ -408,6 +428,37 @@
 </div>
 
 <div class="divider"></div>
+
+<!-- ═══════════════ GRAND FINALE SECTION ═══════════════ -->
+<div class="grand-finale-section">
+  <div class="grand-finale-header">
+    <div class="grand-finale-title">Grand Finale</div>
+  </div>
+  <div class="table-block">
+    <div class="table-subheader">
+      <div class="group-tag">
+        <span class="group-pill grp-a">Top 16 Teams</span>
+      </div>
+      <span class="match-tag">16 Teams</span>
+    </div>
+    <div class="table-container">
+      <table id="tableGF">
+        <thead>
+          <tr>
+            <th class="col-hash">#</th>
+            <th class="col-team">Team</th>
+            <th class="col-match">Matches</th>
+            <th class="col-wwcd">WWCD</th>
+            <th class="col-pos">Pos</th>
+            <th class="col-fin">Finish Pts</th>
+            <th class="col-tot">Total Pts</th>
+          </tr>
+        </thead>
+        <tbody id="tbodyGF"></tbody>
+      </table>
+    </div>
+  </div>
+</div>
 
 <!-- ═══════════════ TABLES GRID ═══════════════ -->
 <div class="tables-grid">
@@ -566,6 +617,57 @@
     }
   }
 
+  function buildRowsGF() {
+    const tbody = document.getElementById('tbodyGF');
+    let teamGF = [
+      "Osama been lag ",
+      "Toxic Titans ",
+      "TeamXpark ",
+      "Legion of Death ",
+      "Godlike ",
+      "PUPAS ",
+
+      "Team Fine shyts",
+      "Team SpiderX ",
+      "Team Falcon ",
+
+      "Clax Esports ",
+      "TEAM ARCANE ",
+
+      "Lethal Syndicate ",
+      "Vinayak Gang ",
+      
+      
+      
+    ];
+    
+    let wwcdGF = ["","1","","","","","","","","","","","","","",""];
+    let posGF = ["5","10","0","6","4","0","3","0","0","2","0","1","1","","","","",""];
+    let matchesGF = ["1","1","1","1","1","1","1","1","1","1","1","1","1","","","","",""];
+    let finishPtsGF = ["12","4","14","7","6","10","3","6","5","2","4","1","0","","","","",""];
+    let totalPtsGF = ["17","14","14","13","10","10","6","6","5","4","4","2","1","","","","",""];
+    
+    for (let i = 1; i <= 16; i++) {
+      const tr = document.createElement('tr');
+      tr.innerHTML = `
+        <td class="rank-cell"><span class="rank-num">${i}</span></td>
+        <td class="team-cell">
+          <div class="team-inner">
+            <div class="team-avatar">—</div>
+            <span class="team-name">${teamGF[i-1]}</span>
+          </div>
+        </td>
+        <td class="match-cell"><span class="dash">${matchesGF[i-1] || '—'}</span></td>
+        <td class="wwcd-cell"><span class="dash">${wwcdGF[i-1] || '—'}</span></td>
+        <td class="pos-cell"><span class="dash">${posGF[i-1] || '—'}</span></td>
+        <td class="fin-cell"><span class="dash">${finishPtsGF[i-1] || '—'}</span></td>
+        <td class="tot-cell"><span class="dash">${totalPtsGF[i-1] || '—'}</span></td>
+      `;
+      tbody.appendChild(tr);
+    }
+  }
+
+  buildRowsGF();
   buildRowsA();
   buildRowsB();
 </script>
